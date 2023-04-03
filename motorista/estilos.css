@@ -1,0 +1,72 @@
+body{
+    background-color: #F6F6F9;
+}
+
+.contenido-titulo{
+    background-color: #0C79FA;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.titulo{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.contendor-logo{
+
+    background-color: #FFFFFF;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+
+.contendor-motorista{
+    border: solid 1.5px #0C79FA;
+    background-color: white;
+    margin-top: 10%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+}
+
+.descripcion-Motorista{
+    DISPLAY: FLEX;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.descripcion-Motorista p{
+    margin: 0;
+}
+
+
+.contendor-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-agregar{
+    font-size: 15px !important;
+    width: 10rem;
+    border-radius: 1rem;
+    
+}
