@@ -5,26 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/4db8fdbf3d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilos.css">
     <title>Administracion</title>
 </head>
 <body>
 
+    <!---------seccion Login administradores---->
+    <div id="seccion-inicio">
     <section class="contenedor-principal">
 
         <div class="contenedor-formulario">
         
             <h3 style="text-align: center;margin-bottom: 2em;">Iniciar Sesion</h3>
             <form>
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label for="correo" class="form-label">Correo</label>
                     <input type="text" class="form-control" id="correo" placeholder="example@example.com">
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label for="contraseña" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" id="contraseña" placeholder="">
                 </div>
-              <div class="contenedor-boton">  <button type="button" id="boton-continuar" class="btn btn-primary">Continuar</button></div>
+              <div class="contenedor-boton">  <button onclick="mostrarPaginaMenu()" type="button" id="boton-continuar" class="btn btn-primary">Continuar</button></div>
             </form>
 
 
@@ -37,8 +40,284 @@
         </div>
 
     </section>
+</div>
+
+<!---------seccion Menu administradores---->
+<div id="seccion-menu">
+    <header class="contenido-titulo-menu">
+
+        <div></div>
+
+        <div class="">
+
+            <h1 class="titulo-menu">Administración Delivery504</h1>
+        </div>
+
+        <div class="contendor-logo-menu">
+
+            <img style="width: 70%;" src="img/logo.png" alt="">
+
+        </div>
+
+    </header>
+
+    <section class="contenedor-categorias-menu">
+
+        <div onclick="mostrarInscripccionEmpresas()" class="info-categorias-menu">
+            <img  style="width: 70%;" src="img/administracion.png" alt="">
+            <h6 style="text-align: center">Administración de  Empresas</h6>
+        </div>
+
+        <div onclick="mostrarInscripccionProductos()" class="info-categorias-menu">
+            <img style="width: 70%;" src="img/adminProductos.png" alt="">
+            <h6 style="text-align: center;margin-top: 1rem;margin-bottom: 0;">Administración de productos</h6>
+        </div>
+
+        <div onclick="mostrarPaginaMotoristas()" class="info-categorias-menu">
+            <img style="width: 70%;" src="img/motoristas.png" alt="">
+            <h6 style="text-align: center;margin-top: 1rem;margin-bottom: 0;">Motoristas</h6>
+        </div>
+
+        <div  onclick="mostrarPaginaOrdenes()" class="info-categorias-menu">
+            <img style="width: 70%;" src="img/ordenes.png" alt="">
+            <h6 style="text-align: center;margin-top: 1rem;margin-bottom: 0;">Ordenes</h6>
+        </div>
+    
 
 
-  <script src="main.js"></script>  
+    </section>
+</div>
+
+<!---------seccion inscripcion empresas---->
+<div id="seccion-inscripccionEmpresas">
+
+    <div style="margin: 1rem 0rem 0rem 1rem;"><i onclick="mostrarPaginaMenu()" style="font-size: 2rem;color: white; cursor: pointer;" class="fa-solid fa-circle-arrow-left"></i></div>
+
+    <section class="contenedor-principal-empresa">
+
+        <div class="contenedor-formulario-empresa">
+        
+            <h3 style="text-align: center;margin-bottom: 2em;">Inscripción de la Empresa</h3>
+
+            <div class="sub-contenedor-empresa">
+            <form style="width: 90%">
+
+                <div class="form-group mb-0">
+                    <label for="nombreEmpresa" class="form-label">Nombre de la Empresa</label>
+                    <input type="text" class="form-control" id="nombreEmpresa" placeholder="">
+                </div>
+                <div class="form-group mb-0">
+                    <label for="tipoEmpresa" class="form-label">Tipo de Empresa</label>
+                    <input type="text" class="form-control" id="tipoEmpresa" placeholder="">
+                </div>
+
+                <div class="form-group mb-0">
+                    <label for="descripción" class="form-label">Descripción</label>
+                    <input type="text" class="form-control" id="descripción" placeholder="">
+                </div>
+
+                <div class="form-group mb-0">
+                    <label for="horarioAtencion" class="form-label">Horario de Atencion</label>
+                    <input type="text" class="form-control" id="horarioAtencion"placeholder="">
+                </div>
+
+
+
+            </form>
+
+            <div class="detalleEmpresa">
+                <img style="width: 20%;margin-bottom: 2rem;" src="img/user.png" alt="">
+                <button type="button" id="boton-agregar" class="btn btn-primary">Agregar Logo</button>
+
+            </div>
+
+        </div>
+        
+        <div class="contenedor-boton-empresa"> <button type="button" id="boton-guardar" class="btn btn-primary">Guardar</button></div>
+
+        </div>
+
+
+
+        <div class="contendor-logo-empresa">
+
+            <img style="width: 100%;" src="img/logo.png" alt="">
+
+        </div>
+
+    </section>
+
+    </div>
+
+<!---------seccion administracion de productos---->
+
+<div id="seccion-inscripccionProductos">
+    <div style="margin: 1rem 0rem 0rem 1rem;"><i onclick="mostrarPaginaMenu()" style="font-size: 2rem;color: white; cursor: pointer;" class="fa-solid fa-circle-arrow-left"></i></div>
+
+    <section class="contenedor-principal-producto">
+
+        <div class="contenedor-formulario-producto">
+        
+            <h3 style="text-align: center;margin-bottom: 2em;">Inscripción de los productos</h3>
+
+            <div class="sub-contenedor-producto">
+            <form style="width: 90%">
+
+                <div class="form-group">
+                    <label for="nombreProducto" class="form-label">Nombre del producto</label>
+                    <input type="text" class="form-control" id="nombreProducto" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="empresa" class="form-label">Empresa</label>
+                    <input type="text" class="form-control" id="empresa" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="descripción" class="form-label">Descripción</label>
+                    <input type="text" class="form-control" id="descripción" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="producto" class="form-label">Producto</label>
+                    <input type="text" class="form-control" id="producto"placeholder="">
+                </div>
+
+
+
+            </form>
+
+            <div class="detalleProducto">
+                <img style="width: 20%;margin-bottom: 2rem;" src="img/user.png" alt="">
+                <button type="button" id="boton-agregar" class="btn btn-primary">Agregar Logo</button>
+
+            </div>
+
+        </div>
+        
+        <div class="contenedor-boton-producto"> <button type="button" id="boton-guardar" class="btn btn-primary">Guardar</button></div>
+
+        </div>
+
+
+
+        <div class="contendor-logo-producto">
+
+            <img style="width: 100%;" src="img/logo.png" alt="">
+
+        </div>
+
+    </section>
+</div>
+
+<!---------seccion     de   motoristas------------->
+
+<div id="seccion-motoristas">
+    <header class="contenido-titulo-motorista">
+
+        <div style="margin: 1rem 0rem 0rem 1rem;"><i onclick="mostrarPaginaMenu()" style="font-size: 2rem;color: white; cursor: pointer;" class="fa-solid fa-circle-arrow-left"></i></div>
+
+
+        <div class="">
+
+            <h1 class="titulo-motorista">Motoristas</h1>
+        </div>
+
+        <div class="contendor-logo-motorista">
+
+            <img style="width: 70%;" src="img/logo.png" alt="">
+
+        </div>
+
+    </header>
+
+
+    <section class="contendor-motorista">
+
+        <div class="descripcion-Motorista">
+
+            <h4>Motorista</h4>
+            <p>Nombre:  <span>exaple</span> </p>
+            <p>Correo:  <span>example@example.com</span></p>
+            <p>Numero:  <span>504000000</span></p>
+
+  
+        </div>
+
+        <div class="contendor-boton-motorista">
+
+            <button type="button" id="boton-agregar-motorista" class="btn btn-primary">Autorizar</button>
+
+        </div>
+
+    </section>
+
+  
+</div>
+
+<!---------seccion     de   ordenes------------->
+<div id="seccion-ordenes">
+    <header class="contenido-titulo-ordenes">
+
+        <div style="margin: 1rem 0rem 0rem 1rem;"><i onclick="mostrarPaginaMenu()" style="font-size: 2rem;color: white; cursor: pointer;" class="fa-solid fa-circle-arrow-left"></i></div>
+
+
+        <div class="">
+
+            <h1 class="titulo-ordenes">Ordenes</h1>
+        </div>
+
+        <div class="contendor-logo-ordenes">
+
+            <img style="width: 70%;" src="img/logo.png" alt="">
+
+        </div>
+
+    </header>
+
+    <div class="contenedorSecciones">
+
+    <section class="contendor-ordenes">
+
+        <div class="descripcion-ordenes">
+
+            <h4>orden## <span style="font-style: normal;font-weight: 400;font-size: 15px; line-height: 31px;color: #000000;">Hamburguesa Jumbo con Queso</span></h4>
+            <img style="width: 20%;" src="img/bigos.png" alt="">
+            <p>Precio:  <span>L. 150</span> </p>
+            
+        </div>
+
+        <div class="contendor-boton-ordenes">
+
+            <img style="width: 70%;" src="img/burger.png" alt="">
+            <button type="button" id="boton-agregar-ordenes" class="btn btn-primary">Asignar</button>
+
+        </div>
+
+
+    </section>
+
+    <div class="verOrden">
+        <h4>orden## </h4>
+        <img style="width: 40%;" src="img/burger.png" alt="">
+
+        <h6>Descripción de la orden</h6>
+        <span style="font-style: normal;font-weight: 400;font-size: 15px; line-height: 31px;color: #000000;">Hamburguesa Jumbo con Queso</span>
+        <p>Precio:  <span>L. 150</span> </p>
+
+
+        <div style="margin-top: 3rem;" class="form-group">
+            <label for="exampleInput">Asignar motorista</label>
+            <input type="text" class="form-control" id="exampleInput" placeholder="Ingrese su texto aquí">
+          </div>
+
+
+    </div>
+</div>
+  
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>  
 </body>
 </html>

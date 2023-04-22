@@ -2,14 +2,14 @@ body{
     background-color: #F6F6F9;
 }
 
-.contenido-titulo{
+.contenido-titulo-menu{
     background-color: #0C79FA;
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
 
-.titulo{
+.titulo-menu{
 
     font-style: normal;
     font-weight: 600;
@@ -21,7 +21,7 @@ body{
     margin-bottom: 0;
 }
 
-.contendor-logo{
+.contendor-logo-menu{
 
     background-color: #FFFFFF;
     margin: 1rem;
@@ -32,7 +32,7 @@ body{
     margin-right: 1rem;
 }
 
-.contenedor-categorias{
+.contenedor-categorias-menu{
 
     margin-top: 5%;
     display: flex;
@@ -41,7 +41,7 @@ body{
 
 }
 
-.info-categorias{
+.info-categorias-menu{
 
     display: flex;
     justify-content: center;

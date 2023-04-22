@@ -1,3 +1,6 @@
+
+
+
 body{
     background-color: #0C79FA;
 }
@@ -13,26 +16,7 @@ body{
     justify-content: center;
 }
 
-.form-control{
 
-    font-style: italic;
-    font-weight: 200;
-    display: block;
-    width: 100%;
-    padding: 12px 15px 12px 15px;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--bs-body-color);
-    background-color: var(--bs-form-control-bg);
-    background-clip: padding-box;
-    border: var(--bs-border-width) solid var(--bs-border-color);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 10px;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
-}
 
 .contenedor-principal{
 
@@ -41,9 +25,6 @@ body{
     margin-top: 5%;
 }
 
-.form-group{
-    margin-bottom: 1rem;
-}
 
 .contenedor-formulario{
 
@@ -61,3 +42,335 @@ justify-content: center;
 margin-top: 2rem;
 
 }
+
+/* Seccion de menu administradores*/
+#seccion-menu{
+    display: none;
+}
+.contenido-titulo-menu{
+    background-color: #0C79FA;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.titulo-menu{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.contendor-logo-menu{
+
+    background-color: #FFFFFF;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.contenedor-categorias-menu{
+
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.info-categorias-menu{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #0C79FA;
+    border-radius: 0.5rem;
+    height: 45vh;
+    width: 12rem;
+    cursor: pointer;
+}
+
+/* Seccion inscripccion Empresas*/
+
+#seccion-inscripccionEmpresas{
+    display: none;
+}
+.contenedor-principal-empresa{
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.contenedor-formulario-empresa{
+    padding: 2rem;
+    border-radius: 1rem;
+    height: 80vh;
+    background-color: #F6F6F9;
+}
+
+.sub-contenedor-empresa{
+    display: flex;
+}
+
+.contendor-logo-empresa{
+    height: 20vh;
+    background-color: #FFFFFF;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.detalleEmpresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-agregar{
+    font-size: 14px !important;
+    
+}
+
+.contenedor-boton-empresa{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+/* Seccion inscripccion Productos*/
+
+
+#seccion-inscripccionProductos{
+    display: none;
+}
+
+.contenedor-principal-producto{
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.contenedor-formulario-producto{
+    padding: 2rem;
+    border-radius: 1rem;
+    height: 80vh;
+    background-color: #F6F6F9;
+}
+
+.sub-contenedor-producto{
+    display: flex;
+}
+
+.contendor-logo-producto{
+    height: 20vh;
+    background-color: #FFFFFF;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.detalleProducto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-agregar{
+    font-size: 14px !important;
+    
+}
+
+.contenedor-boton-producto{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Seccion de Motoristas*/
+
+#seccion-motoristas{
+    display: none;
+}
+
+.contenido-titulo-motorista{
+    background-color: #0C79FA;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.titulo-motorista{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.contendor-logo-motorista{
+
+    background-color: #FFFFFF;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+
+.contendor-motorista{
+    border: solid 1.5px #0C79FA;
+    background-color: white;
+    margin-top: 10%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+}
+
+.descripcion-Motorista{
+    DISPLAY: FLEX;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.descripcion-Motorista p{
+    margin: 0;
+}
+
+
+.contendor-boton-motorista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-agregar-motorista{
+    font-size: 15px !important;
+    width: 10rem;
+    border-radius: 1rem;
+    
+}
+
+
+/* Seccion ordenes*/
+#seccion-ordenes{
+display: none;
+
+}
+
+
+.contenido-titulo-ordenes{
+    background-color: #0C79FA;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.titulo-ordenes{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.contendor-logo-ordenes{
+
+    background-color: #FFFFFF;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+
+.contendor-ordenes{
+    border: solid 1.5px #0C79FA;
+    background-color: white;
+    margin-top: 10%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 1rem;
+    width: 60%;
+}
+
+.descripcion-ordenes{
+    DISPLAY: FLEX;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.descripcion-ordenes p{
+    margin: 0;
+}
+
+
+.contendor-boton-ordenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-agregar-ordenes{
+    font-size: 15px !important;
+    width: 10rem;
+    border-radius: 1rem;
+    
+}
+
+
+.contenedorSecciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verOrden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#DEDEE0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
