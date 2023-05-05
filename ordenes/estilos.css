@@ -1,0 +1,87 @@
+    
+    .contenido-titulo-ordenes{
+        background-color: #0C79FA;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    
+    .titulo-ordenes{
+    
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 50px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        margin-bottom: 0;
+    }
+    
+    .contendor-logo-ordenes{
+    
+        background-color: #FFFFFF;
+        margin: 1rem;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        margin-right: 1rem;
+    }
+    
+    
+    .contendor-ordenes{
+        border: solid 1.5px #0C79FA;
+        background-color: white;
+        margin-top: 10%;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem;
+        padding: 1rem;
+        width: 60%;
+    }
+    
+    .descripcion-ordenes{
+        DISPLAY: FLEX;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    
+    .descripcion-ordenes p{
+        margin: 0;
+    }
+    
+    
+    .contendor-boton-ordenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #boton-agregar-ordenes{
+        font-size: 15px !important;
+        width: 10rem;
+        border-radius: 1rem;
+        
+    }
+    
+    
+    .contenedorSecciones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .verOrden{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:#DEDEE0;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
